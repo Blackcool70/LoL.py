@@ -8,43 +8,15 @@ class LoL():
 
     def __init__(self, api_key, region = 'na') -> None:
         self.__api_key = api_key
-
         self.__regions = {"americas":[['na','na1'],['br','br1'],['lan','la1'],['las','la2'],['oce','oc1']],
                         "europe":[["eune",'eun1'],["euw",'euw1'],["tr",'tr1'],["ru",'ru']],
                         "asia":[["kr","kr"],["jp","jp1"]]
                         }
-        self.__v4_regions = ['BR1','EUN1','EUW1','JP1','KR','LA1','LA2','NA1','OC1','RU','TR1']
-        self.__v5_regions = ['AMERICAS','ASIA','EUROPE']
-
         self.__v5_region, self.__v4_region = self.__get_regions(region)
         self.__url_key = f"?api_key={self.__api_key}"
-
         self.__base_url_1 = f"https://{self.__v4_region}.api.riotgames.com/lol"
         self.__base_url_2 = f"https://{self.__v5_region}.api.riotgames.com/lol"
-
         self.__version = self.__getVersion()
-    
-    #summoner info
-    # def get_summoner_by_name(self, name):
-    #     """
-    #     return: accountId, id, puuid, profileIconid, name, summonerLevel, revisionDate 
-    #     """
-    #     url = f"{self.base_url}/summoner/v4/summoners/by-name/{name}{self.url_key}"
-    #     return self.get_information(url)
-
-    # def get_summoner_by_accountId(self, accountId):
-    #     """
-    #     return: accountId, id, puuid, profileIconid, name, summonerLevel, revisionDate 
-    #     """
-    #     url = f"{self.base_url}/summoner/v4/summoners/by-account/{accountId}{self.url_key}"
-    #     return self.get_information(url)
-
-    # def get_summoner_by_puuid(self, puuid):
-    #     """
-    #     return: accountId, id, puuid, profileIconid, name, summonerLevel, revisionDate 
-    #     """
-    #     url = f"{self.base_url}/summoner/v4/summoners/by-name/{name}{self.url_key}"
-    #     return self.get_information(url)
 
     def get_summoner(self, name:str =None, accountId =None, puuid =None, summonerid =None):
         """

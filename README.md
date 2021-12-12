@@ -1,5 +1,13 @@
 # LoL.py
-A League Of Legends API Wrapper
+A **Tiny** League Of Legends API Wrapper
+
+`pip install LoL.py`
+
+```python
+lol = LoL(api_key, region)
+#region can be [na, euw, eune, tr, ru, kr, jp, br, lan, las, oce]
+```
+
 ```python
 from LoL import LoL
 
