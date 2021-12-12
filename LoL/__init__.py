@@ -1,0 +1,1 @@
+from LoL.main import LoL
