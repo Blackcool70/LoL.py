@@ -1,6 +1,3 @@
-# LoL.py
-A League Of Legends API Wrapper
-```python
 from LoL import LoL
 
 api_key = "API TOKEN"
@@ -33,4 +30,3 @@ print(lol.get_champion_mastery_by_summonerId_and_championId(summonerId,17))
 print(lol. get_matches_by_puuid(puuid))
 
 print(lol.get_match_by_matchid(single_match))
-```
