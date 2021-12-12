@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="LoL.py-Blackcool70",
-    version="0.0.5",
+    version="0.0.6",
     author="Blackcool70",
     author_email="blackcool70_cool7744@hotmail.com",
     description="A tiny Riot-league of legends Api wrapper",
@@ -21,6 +21,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "LoL"},
-    packages=setuptools.find_packages(where="LoL"),
+    packages=[''],
     python_requires=">=3.6",
 )
