@@ -12,6 +12,9 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Blackcool70/LoL.py",
+    install_requires=[
+        'requests',
+    ],
     project_urls={
         "Bug Tracker": "https://github.com/Blackcool70/LoL.py/issues",
     },
