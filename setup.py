@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="LoL.py",
-    version="0.0.9",
+    name="LoL.py-Blackcool70",
+    version="0.0.8",
     author="Blackcool70",
     author_email="blackcool70_cool7744@hotmail.com",
     description="A tiny Riot-league of legends Api wrapper",
