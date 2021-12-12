@@ -1,1 +1,1 @@
-from LoL.main import LoL
+from .main import LoL
