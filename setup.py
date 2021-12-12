@@ -20,7 +20,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "LoL"},
-    packages=[''],
+    packages=['LoL'],
     python_requires=">=3.6",
 )
