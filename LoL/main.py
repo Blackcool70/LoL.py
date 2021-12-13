@@ -74,6 +74,9 @@ class LoL():
     def get_live_match_by_summonerId(self, summonerId: int):
         url = f"{self.__base_url_1}/spectator/v4/active-games/by-summoner/{summonerId}{self.__url_key}"
         return self.__get_information(url)
+    
+    def get_patch_version(self):
+        return self.__getVersion()
 
     #regions
     def __get_regions(self, region):
