@@ -34,6 +34,8 @@ print(lol.get_summoner(summonerid="summoner_id"))
 
 print(lol.get_champion_rotations())
 
+print(lol.get_patch_version())
+
 print(lol.get_champions_mastery_by_summonerId(summonerId))
 
 print(lol.get_champion_mastery_by_summonerId_and_championId(summonerId,17))
