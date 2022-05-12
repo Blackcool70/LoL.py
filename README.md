@@ -11,7 +11,7 @@ lol = LoL(api_key, region)
 ```python
 from LoL import LoL
 
-api_key = "API TOKEN"
+api_key = "API TOKEN" # https://developer.riotgames.com/
 
 lol = LoL(api_key, "euw")
 
