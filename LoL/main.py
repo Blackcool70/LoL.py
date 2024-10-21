@@ -23,7 +23,11 @@ class LoL():
         return: accountId, id, puuid, profileIconid, name, summonerLevel, revisionDate 
         """
         if name:
-            url = f"{self.__base_url_1}/summoner/v4/summoners/by-name/{name}{self.__url_key}"
+            name = name.split(":")
+            game_name = name[0]
+            tag = name[1]
+            #url = f"{self.__base_url_1}/summoner/v4/summoners/by-name/{name}{self.__url_key}"
+            url = f"{self.__base_url_1}/riot/account/v1/accounts/by-riot-id/{game_name}/{tag}{self.__url_key}"
         elif accountId:
             url = f"{self.__base_url_1}/summoner/v4/summoners/by-account/{accountId}{self.__url_key}"
         elif puuid:
